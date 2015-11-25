@@ -1,0 +1,53 @@
+/*#include<iostream.h>
+#define MIN 300
+#define MAX 500
+void main()
+{
+	int a[]={2,3,5,7};
+	int i,j;
+	int flag;
+	for(i=MIN;i<=MAX;i++)
+	{
+		flag=0;
+		for(j=0;j<sizeof(a)/sizeof(int);j++)
+		{
+			if(i%a[j]==0)
+				flag++;
+		}
+		if(flag>=sizeof(a)/sizeof(int))
+			cout<<i<<endl;
+	}
+}*/
+
+/*#include<iostream.h>
+
+class Shape
+{
+	int x,y;
+	int w,h,l;
+public:
+	Shape(int a,int b,int c,int d,int e)
+	{
+		x=a;y=b;w=c;h=d;l=e;
+	}
+	Shape(Shape& s)
+	{
+		x=s.x;y=s.y;w=s.w;h=s.h;l=s.l;
+	}
+	long GetV()
+	{ return w*h*l; }
+	void Print()
+	{
+		cout<<"x="<<x<<",y="<<y<<endl;
+		cout<<"长="<<l<<",宽="<<w<<"，高="<<h<<endl;
+
+	}
+};
+
+void main()
+{
+	Shape s1(1,2,3,4,5);
+	Shape s2(s1);
+	cout<<s1.GetV()<<endl;
+	s2.Print();
+}*/
